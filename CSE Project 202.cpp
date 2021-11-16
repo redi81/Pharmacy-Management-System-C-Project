@@ -3,7 +3,7 @@
 //  CSE - 202 Project By Mujib Ahamad
 //
 //  Created by Mujib Vaa on 24/03/18.
-//  Copyright © 2018 Mujibs Mac. All rights reserved.
+//  Copyright Â© 2018 Mujibs Mac. All rights reserved.
 //
 #include <iostream>
 #include <stdlib.h>
@@ -46,8 +46,8 @@ struct node //constract node
 	int quantity[10];
 	string type = {"OTC"};
 	int x, menu2[10];
-    double amount[10];
-    string medicineName[10]={"Probiotics","Vitamin C(500mg)","Acid Free C(500mg)","Women'S Multivate","Marino Tablet","Maxi Cal Tablet",
+        double amount[10];
+        string medicineName[10]={"Probiotics","Vitamin C(500mg)","Acid Free C(500mg)","Women'S Multivate","Marino Tablet","Maxi Cal Tablet",
 	"Amino Zinc Tablet","Burnex","Fabuloss 5","Royal Propollen"};
 	double Medicine[10] = {2.00,3.00,1.00,4.00,1.00,5.00,7.00,4.00,3.00,5.00};
 	double total;
@@ -70,7 +70,7 @@ int main()
 
 	system("COLOR 61");
 	medicineType medicine;
-	int menu;
+	int choice;
 	do
 	{
 		system("cls");
@@ -85,11 +85,11 @@ int main()
 		cout<<"\t\t||\t5. Daily Summary of total Sale \t\t ||\n";
 		cout<<"\t\t||\t6. Exit\t\t\t\t\t ||\n";
 		cout<<"\t\t--------------------------------------------------\n";
-		cout<<"Enter choice: ";
+		cout<<"Please Enter your choice: ";
 
-		cin>>menu;
+		cin>>choice;
 
-		switch (menu)
+		switch (choice)
 		{
 		case 1:
 			{
@@ -138,7 +138,7 @@ int main()
 				break;
 			}
 		}
-	}while(menu!=6);
+	}while(choice!=6);
 	a://goto
 	cout<<"thank you"<<endl;
 	system ("PAUSE");
